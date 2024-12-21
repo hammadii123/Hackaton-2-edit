@@ -1,19 +1,10 @@
 /* eslint-disable react/no-unescaped-entities */
 
 import Image from "next/image";
-const shoeNames = [
-    "Nike Air Force 1", "Nike Air Max 97", "Nike Air Zoom Pegasus", "Nike Air Max 90", "Nike Air Jordan 1", 
-    "Nike Air VaporMax", "Nike Dunk Low", "Nike Blazer Mid", "Nike React Element 55", "Nike Free RN", 
-    "Nike ZoomX Vaporfly Next%", "Nike SB Dunk Low", "Nike Air Max 1", "Nike Air Huarache", "Nike Air Max 270", 
-    "Nike Air Presto", "Nike Cortez", "Nike Zoom Freak 1", "Nike Flyknit Racer", "Nike Air Max 720", 
-    "Nike Air Jordan 4", "Nike Air Zoom Structure", "Nike LunarEpic Flyknit", "Nike LeBron 18", "Nike Kyrie 6", 
-    "Nike Air Max 200", "Nike Air Tailwind 79", "Nike Air Max Plus", "Nike Air Force 270", "Nike React Infinity Run", 
-    "Nike Zoom Winflo 7", "Nike Air Zoom Alpha", "Nike Shox R4", "Nike Air Max 2090", "Nike Blazer Low", 
-    "Nike Air Max 95", "Nike Air Jordan 3", "Nike Air Zoom Pegasus 37", "Nike Roshe One", "Nike Air Huarache Run", 
-    "Nike SB Dunk High", "Nike React Element 87", "Nike Zoom Freak 2", "Nike Air Max Deluxe", "Nike Air Zoom 2K", 
-    "Nike Air Zoom Fly 3", "Nike Air Zoom Freak 3", "Nike PG 5", "Nike Air VaporMax Plus", "Nike Zoom Freak 4", 
-    "Nike Zoom Kobe 6 Protro", "Nike Air Max 98", "Nike Air Max 95 Ultra", "Nike SB Dunk High Pro", "Nike Air Zoom Freak 5", 
-    "Nike LeBron 17", "Nike Air Zoom Terra Kiger 7", "Nike AlphaDunk", "Nike React Element 87", "Nike ZoomX Invincible Run"
+const hoodiesSweatshirtNames = [
+    "Nike Sportswear Hoodie",
+    "Adidas Essentials Sweatshirt",
+    "Under Armour ColdGear Hoodie"
 ];
 
 // Fetch the product data dynamically using the route parameter
@@ -21,12 +12,12 @@ export default function ProductDetail({ params }: { params: { id: string } }) {
     // Replace this with real data fetching logic if needed
     const productId = parseInt(params.id); // Get product ID from the URL
      // Get product name from the shoeNames array based on productId
-     const shoeName = shoeNames[productId - 1]; // Array index starts from 0, so subtract 1
-    const shoes = {
+     const hoodiesNames =hoodiesSweatshirtNames[productId - 1]; // Array index starts from 0, so subtract 1
+    const hoodies = {
         id: productId,
-        image: `/Shoes/image ${productId}.png`,
-        name: shoeName,
-        description: "Men's Shoes",
+        image: `/Hoodies-SweatShirts/image ${productId}.png`,
+        name: hoodiesNames,
+        description: "Cozy, stylish, and perfect for every occasion.",
         price: `₹${10795 + (productId - 1) * 100}`,
     };
 
@@ -41,8 +32,8 @@ export default function ProductDetail({ params }: { params: { id: string } }) {
   <div className="container px-5 py-24 mx-auto">
     <div className="lg:w-4/5 mx-auto flex flex-wrap">
     <Image
-    src={shoes.image || "/placeholder.png"} // Placeholder image
-    alt={shoes.name || "Product image"}
+    src={hoodies.image || "/placeholder.png"} // Placeholder image
+    alt={hoodies.name || "Product image"}
     width={500}
     height={500}
     className="w-full sm:w-1/2 object-cover rounded-t-lg sm:rounded-l-lg sm:rounded-tr-none"
@@ -52,7 +43,7 @@ export default function ProductDetail({ params }: { params: { id: string } }) {
         Nike
         </h2>
         <h1 className="text-gray-900 text-3xl title-font font-medium mb-1">
-        {shoes.name}
+        {hoodies.name}
         </h1>
         <div className="flex mb-4">
           <span className="flex items-center">
@@ -153,7 +144,8 @@ export default function ProductDetail({ params }: { params: { id: string } }) {
           </span>
         </div>
         <p className="leading-relaxed">
-        Step into style and comfort with our versatile footwear, designed for every occasion and adventure. Crafted with precision and a focus on durability, these shoes seamlessly combine modern aesthetics with functionality. Whether you're dressing up for an event, hitting the gym, or heading out for a casual stroll, our shoes provide unmatched support and style.
+        Wrap yourself in comfort and style with our all-purpose hoodie, designed to complement every season and occasion. Perfect for layering or wearing on its own, this hoodie combines a timeless design with superior quality, making it a must-have staple in your wardrobe. Whether you're lounging at home, heading to the gym, or out on the streets, this hoodie keeps you cozy and effortlessly stylish.
+
         </p>
         <div className="flex mt-6 items-center pb-5 border-b-2 border-gray-100 mb-5">
           <div className="flex">

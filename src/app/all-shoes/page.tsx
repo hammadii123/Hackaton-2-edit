@@ -35,16 +35,24 @@ export default function Home() {
         <div className="flex">
             {/* Sidebar */}
             <div className="w-1/4 hidden md:block bg-gray-50 border-r py-8 px-4">
-                <h2 className="font-bold text-lg mb-4">New <span className="text-gray-400">(500)</span></h2>
+            <h2 className="font-bold text-gray-700 text-lg mb-4">New <span className="text-gray-600">(500)</span></h2>
                 <ul className="space-y-2 text-gray-600">
                 <Link href="/all-shoes">
-                <li>
-        Shoes
-    </li>
-    </Link>
-                    <li>Sports Bras</li>
-                    <li>Tops & T-Shirts</li>
+                    <li>
+                        Shoes
+                    </li>
+                </Link>
+                <Link href={"/all-sportsBras"}>
+                    <li>
+                        Sports Bras
+                        </li>
+                </Link>
+
+
+                <Link href={"/all-hoodiesSweatshirts"}>
                     <li>Hoodies & Sweatshirts</li>
+                </Link>
+                    <li>Tops & T-Shirts</li>
                     <li>Jackets</li>
                     <li>Trousers & Tights</li>
                     <li>Shorts</li>

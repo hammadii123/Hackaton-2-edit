@@ -20,7 +20,7 @@ const Navbar = () => {
 
     // Flowbite NavBar
     <>
-<div className="bg-white shadow-md fixed w-full z-10 mb-4">
+<div className="bg-white shadow-md fixed w-full z-10 mb-16">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="flex justify-between items-center h-16">
               {/* Logo */}
@@ -110,6 +110,13 @@ const Navbar = () => {
               <Link href="/join-us" className="text-gray-700 hover:text-gray-900">
                 Join Us
               </Link>
+
+              <Link  href={"/all-products"} className=" text-gray-700  hover:text-gray-900">New $ featured</Link>
+              <Link  href={"/all-products"} className=" text-gray-700 hover:text-gray-900">Men</Link>
+              <Link  href={"/all-products"} className=" text-gray-700 hover:text-gray-900">Women</Link>
+              <Link  href={"/all-products"} className=" text-gray-700 hover:text-gray-900">Kids</Link>
+              <Link  href={"/all-products"} className=" text-gray-700 hover:text-gray-900">Sale</Link>
+              <Link href={"/all-products"}  className=" text-gray-700 hover:text-gray-900">SNKRS</Link>
               <Link
                 href="/sign-in"
                 className="bg-gray-600 text-white px-4 py-2 rounded-md hover:bg-gray-900 w-[100px]"
@@ -125,22 +132,22 @@ const Navbar = () => {
 
  
 {/* // portion2 */}
-          <div className="text-gray-600 body-font pt-16 ">
+          <div className="text-gray-600 body-font hidden md:flex md:pt-16 pt-20">
           <div className="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
-            <a className="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
+            <Link href={"/"}  className="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
               <img src={"/logo.png"} alt={"Logo"} />
               <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" />
 
              
-            </a>
-            <nav className="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center">
+            </Link>
+            <div className="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center">
               <Link  href={"/all-products"} className="mr-5 hover:text-gray-900">New $ featured</Link>
               <Link  href={"/all-products"} className="mr-5 hover:text-gray-900">Men</Link>
               <Link  href={"/all-products"} className="mr-5 hover:text-gray-900">Women</Link>
               <Link  href={"/all-products"} className="mr-5 hover:text-gray-900">Kids</Link>
               <Link  href={"/all-products"} className="mr-5 hover:text-gray-900">Sale</Link>
               <Link href={"/all-products"}  className="mr-5 hover:text-gray-900">SNKRS</Link>
-            </nav>
+            </div>
             <div className="flex gap-x-4">
             <div className="relative hidden md:block">
           <input
@@ -160,6 +167,10 @@ const Navbar = () => {
           </div>
         </div>
 
+        <div className="pt-20 md:pt-16">
+  {/* All other body content goes here */}
+</div>
+
     </>
      
   );
@@ -167,3 +178,4 @@ const Navbar = () => {
 }
 
 export default Navbar;
+

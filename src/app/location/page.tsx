@@ -82,7 +82,7 @@ export default function Location() {
         </div>
 
         {/* Map Section */}
-        <div className="w-full h-[100vh] bg-gray-200">
+        <div className="w-full md:h-[100vh] bg-gray-200">
           <Image
             src="/Map.png"
             alt="Nike Store Locations"
