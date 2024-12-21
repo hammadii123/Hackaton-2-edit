@@ -136,7 +136,7 @@ export default function ProductDetail({ params }: { params: { id: string } }) {
           </span>
         </div>
         <p className="leading-relaxed">
-        Experience excellence with our premium-quality [Product Name], designed to deliver performance, reliability, and style. Whether you're upgrading your daily essentials or seeking innovation for a specific purpose, this product adapts to your needs effortlessly.
+        Experience excellence with our premium-quality, designed to deliver performance, reliability, and style. Whether you're upgrading your daily essentials or seeking innovation for a specific purpose, this product adapts to your needs effortlessly.
         </p>
         <div className="flex mt-6 items-center pb-5 border-b-2 border-gray-100 mb-5">
           <div className="flex">
