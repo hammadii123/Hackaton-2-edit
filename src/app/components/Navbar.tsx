@@ -112,25 +112,29 @@ const Navbar = () => {
               </Link>
 
               <Link  href={"/all-products"} className=" text-gray-700  hover:text-gray-900">New $ featured</Link>
-              <ol className="ml-3 py-2 text-gray-500  hover:text-gray-800 space-y-2">
+              <ol className="ml-3 py-2 text-gray-500 ">
               
-                    <li>
+                    <li className='hover:text-gray-800 space-y-2'>
                     <Link href="/all-shoes">
                         Shoes
                         </Link>
                     </li>
                 
                 
-                    <li>
+                    <li className='hover:text-gray-800 space-y-2'>
                     <Link href={"/all-sportsBras"}>
                         Sports Bras
+                        </Link>
                         
                         </li>
                
 
-                <Link href={"/all-hoodiesSweatshirts"}>
-                    <li>Hoodies & Sweatshirts</li>
+                
+                    <li className='hover:text-gray-800 space-y-2'>
+                    <Link href={"/all-hoodiesSweatshirts"}>
+                    Hoodies & Sweatshirts
                 </Link>
+                </li>
                     <li>Tops & T-Shirts</li>
                     <li>Jackets</li>
                     <li>Trousers & Tights</li>
