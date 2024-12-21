@@ -112,6 +112,35 @@ const Navbar = () => {
               </Link>
 
               <Link  href={"/all-products"} className=" text-gray-700  hover:text-gray-900">New $ featured</Link>
+              <ol className="ml-3 py-2 text-gray-500  hover:text-gray-800 space-y-2">
+              
+                    <li>
+                    <Link href="/all-shoes">
+                        Shoes
+                        </Link>
+                    </li>
+                
+                
+                    <li>
+                    <Link href={"/all-sportsBras"}>
+                        Sports Bras
+                        
+                        </li>
+               
+
+                <Link href={"/all-hoodiesSweatshirts"}>
+                    <li>Hoodies & Sweatshirts</li>
+                </Link>
+                    <li>Tops & T-Shirts</li>
+                    <li>Jackets</li>
+                    <li>Trousers & Tights</li>
+                    <li>Shorts</li>
+                    <li>Tracksuits</li>
+                    <li>Skirts & Dresses</li>
+                    <li>Socks</li>
+                    <li>Accessories</li>
+                    <li>Equipment</li>
+              </ol>
               <Link  href={"/all-products"} className=" text-gray-700 hover:text-gray-900">Men</Link>
               <Link  href={"/all-products"} className=" text-gray-700 hover:text-gray-900">Women</Link>
               <Link  href={"/all-products"} className=" text-gray-700 hover:text-gray-900">Kids</Link>
@@ -142,6 +171,7 @@ const Navbar = () => {
             </Link>
             <div className="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center">
               <Link  href={"/all-products"} className="mr-5 hover:text-gray-900">New $ featured</Link>
+            
               <Link  href={"/all-products"} className="mr-5 hover:text-gray-900">Men</Link>
               <Link  href={"/all-products"} className="mr-5 hover:text-gray-900">Women</Link>
               <Link  href={"/all-products"} className="mr-5 hover:text-gray-900">Kids</Link>
