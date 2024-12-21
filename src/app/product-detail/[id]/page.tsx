@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import Image from "next/image";
 
 // Fetch the product data dynamically using the route parameter
@@ -135,11 +136,7 @@ export default function ProductDetail({ params }: { params: { id: string } }) {
           </span>
         </div>
         <p className="leading-relaxed">
-          Fam locavore kickstarter distillery. Mixtape chillwave tumeric
-          sriracha taximy chia microdosing tilde DIY. XOXO fam indxgo juiceramps
-          cornhole raw denim forage brooklyn. Everyday carry +1 seitan poutine
-          tumeric. Gastropub blue bottle austin listicle pour-over, neutra jean
-          shorts keytar banjo tattooed umami cardigan.
+        Experience excellence with our premium-quality [Product Name], designed to deliver performance, reliability, and style. Whether you're upgrading your daily essentials or seeking innovation for a specific purpose, this product adapts to your needs effortlessly.
         </p>
         <div className="flex mt-6 items-center pb-5 border-b-2 border-gray-100 mb-5">
           <div className="flex">

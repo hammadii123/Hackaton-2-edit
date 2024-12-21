@@ -15,7 +15,7 @@ export default function ProductDetail({ params }: { params: { id: string } }) {
      const hoodiesNames =hoodiesSweatshirtNames[productId - 1]; // Array index starts from 0, so subtract 1
     const hoodies = {
         id: productId,
-        image: `/Hoodies-SweatShirts/image ${productId}.png`,
+        image: `/Hoodies-sweatShirts/image ${productId}.png`,
         name: hoodiesNames,
         description: "Cozy, stylish, and perfect for every occasion.",
         price: `₹${10795 + (productId - 1) * 100}`,
